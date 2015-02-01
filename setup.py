@@ -8,7 +8,7 @@ setup(
     author = 'Rohith PR',
     author_email = 'praroh2@gmail.com',
     url = 'https://github.com/rohithpr/PyML',
-    download_url = 'https://github.com/rohithpr/PyML/tarball/0.1',
+    download_url = 'https://github.com/rohithpr/PyML/tarball/0.1.1',
     keywords = ['machine learning'],
     classifiers = [
     'License :: OSI Approved :: MIT License',
