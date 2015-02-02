@@ -1,4 +1,4 @@
-from pyml.cost import compute_cost
+from pyml import compute_cost
 
 import nose
 import numpy as np
