@@ -8,7 +8,7 @@ def gradient_descent_base(x, y, theta, alpha, num_iters, want_history=True):
         cost_history = np.zeros(num_iters)
 
     for idx in range(num_iters):
-        temp = x.T * ((x * theta) - y);
+        temp = x.T * (x * theta - y);
         theta = theta - alpha / m * temp;
 
         if want_history:
