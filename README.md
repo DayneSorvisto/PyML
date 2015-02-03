@@ -12,7 +12,9 @@ Machine Learning algorithms in Python
 
 * [Cost](#cost)
 * [Feature normalization](#feature-normalization)
-* [Gradient Descent](#gradient-descent)
+* [File operations](#file-operations)
+* [Get theta](#get-theta)
+* [Gradient descent](#gradient-descent)
 * [Prediction](#prediction)
 
 The first column of the training set x must be all 1s.
@@ -59,6 +61,42 @@ Normalized x:  [[ 1.         -1.22474487 -1.22474487]
  [ 1.          1.22474487  1.22474487]]
 ```
 
+#### File operations
+
+```python
+# load(file, sep=',')
+# save(file, x, mode='w', sep=',')
+
+x = pyml.load('data1')
+pyml.save('data2', x)
+y = pyml.load('data2')
+print((x == y).all())
+```
+
+```
+True
+```
+
+#### Get theta
+
+```python
+list_x = [[1, 1], [1, 2], [1, 3]]
+list_y = [[10], [20], [30]]
+
+x = np.matrix(list_x)
+y = np.matrix(list_y)
+
+(x, mu, sigma) = pyml.normalize_features(x)
+
+theta = pyml.get_theta(x, y)
+print('Theta: ', theta)
+```
+
+```
+Theta: [[ 20.        ]
+ [  8.16496581]]
+```
+
 #### Gradient Descent
 
 ```python
@@ -83,6 +121,8 @@ print('Theta: ', theta)
 Theta:  [[ 20.        ]
  [  8.16496581]]
 ```
+
+Note: `gradient_descent_history(x, y, theta, alpha, num_iters)` returns a tuple in which the first element is theta and the second element is a list with cost history from all the iterations.
 
 #### Prediction
 
