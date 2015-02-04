@@ -142,8 +142,9 @@ num_iters = 2000
 
 theta = pyml.gradient_descent(x, y, theta, alpha, num_iters)
 
-vals = [[1, 4], [1, 5]]
-predictions = pyml.predict(np.matrix(vals), theta, mu, sigma)
+list_vals = [[1, 4], [1, 5]]
+vals = np.matrix(list_vals)
+predictions = pyml.predict(vals, theta, mu, sigma)
 print('Predictions: ', predictions)
 ```
 
