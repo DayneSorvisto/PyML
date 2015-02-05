@@ -3,3 +3,8 @@ setup.cfg
 setup.py
 pyml/__init__.py
 pyml/cost.py
+pyml/file_operations.py
+pyml/get_theta.py
+pyml/gradient_descent.py
+pyml/normalize_features.py
+pyml/prediction.py
