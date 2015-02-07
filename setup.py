@@ -3,12 +3,12 @@ from distutils.core import setup
 setup(
     name = 'PyML',
     packages = ['pyml'],
-    version = '0.2',
+    version = '0.2.1',
     description = 'Machine Learning algorithms in Python',
     author = 'Rohith PR',
     author_email = 'praroh2@gmail.com',
     url = 'https://github.com/rohithpr/PyML',
-    download_url = 'https://github.com/rohithpr/PyML/tarball/0.2',
+    download_url = 'https://github.com/rohithpr/PyML/tarball/0.2.1',
     keywords = ['machine learning'],
     classifiers = [
     'Intended Audience :: Developers',
