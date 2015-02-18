@@ -8,6 +8,10 @@ Machine Learning algorithms in Python
 
 `$ pip install PyML`
 
+### Contribution
+
+Feel free to raise issues or add new features. A lot of work can be done on this project!
+
 ### Usage
 
 * [Cost](#cost)
