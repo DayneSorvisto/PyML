@@ -38,7 +38,7 @@ x = np.matrix(list_x)
 theta = np.matrix(list_theta)
 y = np.matrix(list_y)
 
-cost = pyml.compute_cost(x, y, theta)
+cost = pyml.linear_regression_cost(x, y, theta)
 print('Cost: ', cost)
 ```
 

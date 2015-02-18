@@ -12,7 +12,7 @@ def gradient_descent_base(x, y, theta, alpha, num_iters, want_history=True):
         theta = theta - alpha / m * temp;
 
         if want_history:
-            cost_history[idx] = pyml.compute_cost(x, y, theta)
+            cost_history[idx] = pyml.linear_regression_cost(x, y, theta)
     return (theta, cost_history)
 
 def gradient_descent(x, y, theta, alpha, num_iters):
