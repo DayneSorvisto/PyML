@@ -16,6 +16,7 @@ Machine Learning algorithms in Python
 * [Get theta](#get-theta)
 * [Gradient descent](#gradient-descent)
 * [Prediction](#prediction)
+* [Sigmoid](#sigmoid)
 
 The first column of the training set x must be all 1s.
 
@@ -151,4 +152,19 @@ print('Predictions: ', predictions)
 ```
 Predictions:  [[ 40.]
  [ 50.]]
+```
+
+#### Sigmoid
+
+```python
+list_y = [[10], [20], [30]]
+s = pyml.sigmoid(y)
+print('Sigmoid: ', s)
+
+print('Sigmoid: ', list(map(pyml.sigmoid, [float('-inf'), -1, 0, 1, float('inf')])))
+```
+
+```
+Sigmoid:  [[ 0.9999546  1.         1.       ]]    # Returns np.matrix for iterables
+Sigmoid:  [0.0, 0.2689414213699951, 0.5, 0.7310585786300049, 1.0]    # Returns float for int/float
 ```

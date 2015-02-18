@@ -1,4 +1,4 @@
-from pyml import compute_cost
+from pyml import linear_regression_cost
 
 import nose
 import numpy as np
@@ -12,7 +12,7 @@ def test_cost_1():
     theta = np.matrix(list_theta)
     y = np.matrix(list_y)
 
-    j = compute_cost(x, y, theta)
+    j = linear_regression_cost(x, y, theta)
 
     assert j == 2.3333333333333335
 
@@ -25,7 +25,7 @@ def test_cost_2():
     theta = np.matrix(list_theta)
     y = np.matrix(list_y)
 
-    j = compute_cost(x, y, theta)
+    j = linear_regression_cost(x, y, theta)
 
     assert j == 0.0
 
@@ -38,7 +38,7 @@ def test_cost_3():
     theta = np.matrix(list_theta)
     y = np.matrix(list_y)
 
-    j = compute_cost(x, y, theta)
+    j = linear_regression_cost(x, y, theta)
 
     assert j == float('inf')
 
@@ -51,7 +51,7 @@ def test_cost_4():
     theta = np.matrix(list_theta)
     y = np.matrix(list_y)
 
-    j = compute_cost(x, y, theta)
+    j = linear_regression_cost(x, y, theta)
 
     assert j == float('inf')
 
@@ -64,6 +64,6 @@ def test_cost_5():
     theta = np.matrix(list_theta)
     y = np.matrix(list_y)
 
-    j = compute_cost(x, y, theta)
+    j = linear_regression_cost(x, y, theta)
 
     assert j == float('inf')
