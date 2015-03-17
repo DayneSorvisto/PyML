@@ -14,4 +14,4 @@ def classify(x, theta, _type=bool):
 def sigmoid(x):
     x_arr = np.array(x)
     g = 1 / (1 + np.exp( -1*(x_arr)))
-    return g
+    return np.matrix(g)
