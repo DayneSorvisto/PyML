@@ -52,8 +52,8 @@ Cost:  0.0
 
 #### Feature normalization
 
-# Feature Normalization scales the data and centers it around zero.
-# The scaled data has zero mean and unity variance. 
+Feature Normalization scales the data and centers it around zero.
+The scaled data has zero mean and unity variance. 
 ```python
 list_x = [[2., 5., 9], [100., 200., 300.], [5000., 7000., 9000.]]
 
