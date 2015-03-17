@@ -52,8 +52,12 @@ Cost:  0.0
 
 #### Feature normalization
 
+# Feature Normalization scales the data and centers it around zero.
+# The scaled data has zero mean and unity variance. 
 ```python
-list_x = [[1, 1, 100], [1, 2, 101], [1, 3, 102]]
+list_x = [[2., 5., 9], [100., 200., 300.], [5000., 7000., 9000.]]
+
+
 x = np.matrix(list_x)
 
 (x, mu, sigma) = pyml.normalize_features(x)
@@ -61,9 +65,10 @@ print('Normalized x: ', x)
 ```
 
 ```
-Normalized x:  [[ 1.         -1.22474487 -1.22474487]
- [ 1.          0.          0.        ]
- [ 1.          1.22474487  1.22474487]]
+Normalized x: 
+[[-0.72800291 -0.736872   -0.74169951]
+ [-0.68600274 -0.67691788 -0.67194044]
+ [ 1.41400566  1.41378988  1.41363994]]
 ```
 
 #### File operations
